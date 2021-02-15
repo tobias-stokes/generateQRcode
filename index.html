@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barcode Generator Template</title>
+        <script src="scripts/genBC.js"></script>
+</head>
+<body>
+    <div>
+        <input type="text" id="inputString">
+            <br>
+        <input type="button" value="Generate" onClick="genBC(document.getElementById('inputString').value,
+                                                                document.getElementById('result'))">
+        <div id="result"></div>
+    </div>
+</body>
+</html>
+
+<!-- When calling function genBC you need 2 arguments
+    1. The string you wish to make into QR Code
+    2. The location you want to display -->
